@@ -1,4 +1,4 @@
 # entornosdedesarrollo
 
 
-Repositorio dela asignatura Entornos de Desarrollo.
+Repositorio de la asignatura Entornos de Desarrollo.
