@@ -13,7 +13,6 @@ public class Ejercicio4_Tarea {
         // Instanciamos las variables y la cadena con los días de la semana
         int número;
         String día;
-        String[] dias_semana = {"Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingos"};
         // Solicitamos al usuario el número del día de la semana
         System.out.println("OBTENER EL NOMBRE DEL DÍA DE LA SEMANA");
         System.out.println("Por favor, introduzca el número: ");
@@ -25,22 +24,31 @@ public class Ejercicio4_Tarea {
             número = sc.nextInt();
         }
         // Devolvemos el nombre del día de la semana dependiendo del número indicado
-        día = dias_semana[número-1];
-        if(número == 1){
-            System.out.println("El día de la semana es " + día + ".");
-        }else if(número == 2){
-            System.out.println("El día de la semana es " + día + ".");
-        }else if(número == 3){
-            System.out.println("El día de la semana es " + día + ".");
-        }else if(número == 4){
-            System.out.println("El día de la semana es " + día + ".");
-        }else if(número == 5){
-            System.out.println("El día de la semana es " + día + ".");
-        }else if(número == 6){
-            System.out.println("El día de la semana es " + día + ".");
-        }else{
-            System.out.println("El día de la semana es " + día + ".");
-        }
+       switch (número){
+           case 1:
+               día = "Lunes";
+               break;
+           case 2:
+               día = "Martes";
+               break;
+           case 3:
+               día = "Miércoles";
+               break;
+           case 4:
+               día = "Jueves";
+               break;
+           case 5:
+               día = "Viernes";
+               break;
+           case 6:
+               día = "Sábado";
+               break;
+           default:
+               día = "Domingo";
+               
+       }
+       
+       System.out.println("El día de la semana es " + día + ".");
     }
     
 }
