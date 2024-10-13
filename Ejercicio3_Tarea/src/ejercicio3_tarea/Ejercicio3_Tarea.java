@@ -14,6 +14,7 @@ public class Ejercicio3_Tarea {
         int num1;
         int num2;
         int num3;
+        int mayor = 0;
         // Imprimimos por pantalla para solicitar los datos al usuario
         System.out.println("OBTENER EL NÜMERO MAYOR DEL CONJUNTO DE TRES DADO");
         System.out.println("Por favor, introduzca el primer número: ");
@@ -31,17 +32,18 @@ public class Ejercicio3_Tarea {
         // Primer camino, donde num1 es mayor que num 2
         if(num1 > num2){
             if(num1 > num3){
-                System.out.println("El número mayor entre esos tres es: " + num1);
+                mayor = num1;
             }else{
-                System.out.println("El número mayor entre esos tres es: " + num3);
-            }
-            
+                mayor = num3;
+            }          
         // Segundo camino, donde num2 es mayor que num1
         }else if(num2 > num3){
-            System.out.println("El número mayor entre esos tres es: " + num2);
+            mayor = num2;
         }else{
-            System.out.println("El número mayor entre esos tres es: " + num3);
-    }
+            mayor = num3;
+        }
+        
+        System.out.println("El número mayor entre esos tres es: " + mayor);
        
     }
 }
